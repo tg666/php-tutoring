@@ -1,0 +1,27 @@
+{
+	"name": "tg666/php-tutoring",
+	"description": "",
+	"keywords": [],
+	"license": "proprietary",
+	"authors": [
+		{
+			"name": "Tomáš Glawaty",
+			"email": "tomasglawaty@icloud.com"
+		}
+	],
+	"require": {
+		"php": "^7.4",
+		"tracy/tracy": "^2.9"
+	},
+	"require-dev": {
+		"roave/security-advisories": "dev-latest"
+	},
+	"config": {
+		"sort-packages": true
+	},
+	"autoload": {
+		"psr-4": {
+			"App\\": "src/"
+		}
+	}
+}

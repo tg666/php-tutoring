@@ -1,0 +1,19 @@
+version: "3.7"
+
+services:
+    app:
+        build:
+            context: .
+            dockerfile: Dockerfile
+            target: app
+        container_name: php-tutoring-app
+        command: ["run-nginx-unit"]
+        ports:
+            - 8888:8080
+        networks:
+            - backend
+        volumes:
+            - .:/var/www/html:cached
+
+networks:
+    backend:
